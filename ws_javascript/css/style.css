@@ -10,6 +10,27 @@
   display: block;
 }
 .formulaire {
-  bottom: 20px;
-  left: 20%;
+  bottom: 50px;
+  left: 12%;
 }
+#adresse{
+  border: solid 2px;
+  border-radius: 5px;
+  border-color:rgb(1,126,120);
+  height: 40px;
+  /* width: 300px; */
+}
+input{
+  border: solid 2px;
+  border-radius: 5px;
+  border-color:rgb(1,126,120);
+  height: 40px;
+}
+button{
+  height: 40px;
+  border-radius: 5px;
+  border-color:rgb(1,126,120);
+  background-color: rgb(1,126,120);
+  color: white;
+}
+
