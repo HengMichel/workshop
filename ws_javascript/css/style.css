@@ -20,17 +20,20 @@
   height: 40px;
   /* width: 300px; */
 }
-input{
-  border: solid 2px;
-  border-radius: 5px;
-  border-color:rgb(1,126,120);
-  height: 40px;
-}
-button{
+#recherche{
   height: 40px;
   border-radius: 5px;
   border-color:rgb(1,126,120);
   background-color: rgb(1,126,120);
   color: white;
 }
+input{
+  border: solid 2px;
+  border-radius: 5px;
+  border-color:rgb(1,126,120);
+  height: 40px;
+}
+/* button{
+  
+} */
 
