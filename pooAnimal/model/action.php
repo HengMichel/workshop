@@ -4,9 +4,9 @@ récupérer les informations du formulaire
 appeler la méthode inscription pour enregistrer les données dans la bd -->
 <?php
 session_start();
-require_once "../user.php"; 
-require_once "../inc/database.php";
-require_once "../inc/functions.php";
+require_once "./user.php"; 
+require_once "./inc/database.php";
+require_once "./inc/functions.php";
 
 if(isset($_POST["co"])){
     $firstname = htmlspecialchars($_POST["firstname"]);

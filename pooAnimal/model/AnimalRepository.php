@@ -1,5 +1,6 @@
 <?php 
-require_once "../inc/database.php";
+require_once  "./inc/database.php";
+// require_once $_SERVER["DOCUMENT_ROOT"]."./inc/database.php";
 
 class AnimalRepository{
     // attributs
@@ -40,15 +41,24 @@ class AnimalRepository{
     }
 
     public function findAll(){
+
         $db = new dbConnect();
         $connexion = $db->dbConnexion();
         $connexionRequest = $connexion->prepare("SELECT * FROM animal");
         
-        // éxecuter la requête
-        $connexionRequest->execute();
+        $animaux = null;
+
+        // exécuter la requête
+        try {
+            $connexionRequest->execute();
+            $animaux = $connexionRequest->fetchall(PDO::FETCH_ASSOC);
+           
+        } catch (PDOException $e) {
+            echo $e->getMessage();
+        }return $animaux;
+
         // récupérer le résultat de la requête 
-        $animaux = $connexionRequest->fetchall(PDO::FETCH_ASSOC);
-        debugDie($animaux);
+        // debugDie($animaux);
     }
 
     }
