@@ -1,6 +1,7 @@
 <?php 
+require_once $_SERVER["DOCUMENT_ROOT"]."/AnimalClass.php";
 // require_once "inc/functions.php";
-require_once "model/AnimalRepository.php";
+require_once $_SERVER["DOCUMENT_ROOT"]."model/AnimalRepository.php";
 // require_once "model/action.php";
 
 // Créez une instance de la classe AnimalRepository

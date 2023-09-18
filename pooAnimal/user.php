@@ -1,7 +1,7 @@
  <!-- dans user.php -->
  <?php 
 
-require_once "inc/database.php";
+require_once $_SERVER["DOCUMENT_ROOT"]."/inc/database.php";
 
 // créer la classe User avec les propriétés: 
 // nom, prénom, émail, mot de passe 

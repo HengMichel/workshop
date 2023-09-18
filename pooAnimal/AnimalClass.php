@@ -1,7 +1,8 @@
  <!-- dans utilisateur.php -->
  <?php 
+require_once $_SERVER["DOCUMENT_ROOT"]."/inc/database.php";
 
-require_once "inc/database.php";
+// require_once $_SERVER["DOCUMENT_ROOT"]."/pooAnimal/inc/database.php";
 
 // créer la classe Utilisateur avec les propriétés: 
 // nom, prénom, émail, mot de passe 

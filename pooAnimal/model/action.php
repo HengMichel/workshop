@@ -4,9 +4,9 @@ récupérer les informations du formulaire
 appeler la méthode inscription pour enregistrer les données dans la bd -->
 <?php
 session_start();
-require_once "./user.php"; 
-require_once "./inc/database.php";
-require_once "./inc/functions.php";
+require_once $_SERVER["DOCUMENT_ROOT"]."/user.php"; 
+require_once $_SERVER["DOCUMENT_ROOT"]."/inc/database.php";
+require_once $_SERVER["DOCUMENT_ROOT"]."/inc/functions.php";
 
 if(isset($_POST["co"])){
     $firstname = htmlspecialchars($_POST["firstname"]);
@@ -22,7 +22,7 @@ if(isset($_POST["co"])){
   
 }
 
-require_once "AnimalRepository.php"; 
+require_once $_SERVER["DOCUMENT_ROOT"]."/AnimalRepository.php"; 
 
 if(isset($_POST["submit"])){
     //debugDie() permet de vérifier si les données ont été pris en compte sous forme d1 table associative
